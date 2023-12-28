@@ -280,6 +280,13 @@ function addToResults(result) {
     var entry = document.createElement('li');
     entry.appendChild(document.createTextNode(result));
     resultsList.appendChild(entry);
+    document.getElementById("clear-results-button").style.visibility = 'visible';
+}
+
+function clearResults() {
+    let resultsList = document.getElementById("results");
+    resultsList.innerHTML = "";
+    document.getElementById("clear-results-button").style.visibility = 'hidden';
 }
 
 window.onload = function() {

@@ -25,7 +25,7 @@ html, body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: white;
     font-family: monospace;
@@ -120,7 +120,20 @@ button:hover{
     border-top: solid 1px #d9d9d9;
 }
 
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .couple-delete-btn {
     margin-left: 10px;
     width: 15px;
+}
+
+.clear-results-button {
+    visibility: hidden;
+    border: none;
+    font-weight: bold;
+    font-size: x-large;
 }
