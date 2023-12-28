@@ -1,0 +1,126 @@
+@keyframes illumination {
+    0% { filter: drop-shadow(0 0 0rem #ABCBFC); }
+    50% { filter: drop-shadow(0 0 1rem #ABCBFC);}
+    100% { filter: drop-shadow(0 0 0rem #ABCBFC); }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: monospace;
+    padding: 0 10%;
+}
+
+.commands {
+    width: 40%;
+    background-color: white;
+    color: black;
+}
+
+.block {
+    padding: 5%;
+}
+
+.enigma {
+    width: 50%;
+    height: auto;
+}
+
+.enigma-image {
+    height: auto;
+    width: 90%;
+    animation-duration: 1s;
+}
+
+.enigma-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.enigma-logo {
+    height: auto;
+    width: 100px;
+}
+
+.input {
+    all: unset;
+    font-size: large;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+    border: 1px solid black;
+}
+
+button:hover{
+    background-color: #d9d9d9;
+}
+
+.clear-button {
+    border: none;
+    width: 15px;
+    visibility: hidden;
+}
+
+.illumination {
+    animation-name: illumination;
+    animation-timing-function: ease-in-out;
+}
+
+.substitution {
+    margin-top: 10px;
+}
+
+.couple-letter-input {
+    all: unset;
+    font-size: large;
+    border-bottom: 1px solid grey;
+    width: 3%;
+}
+
+.add-couple-button {
+    border: none;
+    width: 15px;
+    visibility: hidden;
+}
+
+.results {
+    border-top: solid 1px #d9d9d9;
+}
+
+.couple-delete-btn {
+    margin-left: 10px;
+    width: 15px;
+}
