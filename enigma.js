@@ -16,7 +16,7 @@ const reflector = ['f', 'v', 'p', 'j', 'i', 'a', 'o', 'y', 'e', 'd', 'r', 'z', '
 
 const substitutionDictionnary = {};
 
-function decrypt() {
+function decryptOrEncrypt() {
     let input = document.getElementById("input").value;
 
     if(input.length > 0) {
@@ -34,18 +34,8 @@ function decrypt() {
             result.push(finalChar);
         }
         let finalOutput = result.join('')
-        console.log("decrypt result : " + finalOutput);
+        console.log("decrypt/encrypt result : " + finalOutput);
 
-        addToResults(finalOutput);
-    }
-}
-
-function encrypt() {
-    let input = document.getElementById("input").value;
-    if(input.length > 0) {
-        let finalOutput = codeString(input);
-        console.log("encrypt result : " + finalOutput);
-    
         addToResults(finalOutput);
     }
 }
@@ -121,7 +111,16 @@ function codeLetter(charInput) {
         }
     }
 
-    return finalChar;
+    let res = finalChar;
+    //Checker si il faut remplacer la lettre par une autre
+    // if(substitutionDictionnary[finalChar]) {
+    //     res = substitutionDictionnary[finalChar];
+    // }
+    // else if(Object.keys(substitutionDictionnary).find(key => substitutionDictionnary[key] === finalChar)) {
+    //     res = Object.keys(substitutionDictionnary).find(key => substitutionDictionnary[key] === finalChar)
+    // }
+
+    return res;
 }
 
 function resetRotors() {
