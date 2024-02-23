@@ -4,7 +4,7 @@ Ce simulateur est un site web permettant de chiffrer et de déchiffrer des messa
 
 ## Guide d'utilisation
 
-1. Téléchargez le dossier contenant le site.
+1. Cloner ou téléchargez le projet.
 
 2. Ouvrez le fichier `enigma.html` dans votre navigateur web.
 
