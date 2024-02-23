@@ -16,6 +16,6 @@ Ce simulateur est un site web permettant de chiffrer et de déchiffrer des messa
    
    - **Réinitialiser les rotors :** Ce bouton permet de réinitialiser les rotors de la machine à leur position initiale.
    
-   - **Ajouter une paire de substitution :** Vous pouvez ajouter jusqu'à 10 paires de substitution en spécifiant deux lettres à échanger dans les champs de texte prévus. Cliquez ensuite sur le bouton "+" pour ajouter la paire de substitution. Vous pouvez également supprimer une paire de substitution en cliquant sur l'icône "-" à côté de la paire correspondante.
+   - **Ajouter une paire de substitution :** Vous pouvez ajouter jusqu'à 10 paires de substitution en spécifiant deux lettres à échanger dans les champs de texte prévus. Cliquez ensuite sur le bouton "+" pour ajouter la paire de substitution. Vous pouvez également supprimer une paire de substitution en cliquant sur l'icône "x" à côté de la paire correspondante.
    
    - **Résultats :** Les résultats du chiffrement ou du déchiffrement seront affichés dans cette section. Vous pouvez effacer les résultats en cliquant sur l'icône &#128465;.
